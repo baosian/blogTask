@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Берегись автомобиля</title>
 </head>
 <body>
     <h1>Берегись автомобиля. Блог Юрия Деточкина</h1>
-    <button>Вход</button>
-    <button>Регистрация</button>
+    <form method="post" th:action="@{/authorisation}" >
+        <button>Вход</button>
+    </form>
+
+    <form method="post" th:action="@{/registration}">
+        <button>Регистрация</button>
+    </form>
+
+
     <hr>
 </body>
 </html>

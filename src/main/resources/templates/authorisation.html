@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Авторизация</title>
 </head>
 <body>
-$END$
+    <h1>Авторизация</h1>
+    <h3>Введите e-mail</h3>
+    <input name="email">
+    <h3>Введите пароль</h3>
+    <input name="password"/>
+
+    <a href="">Забыли пароль?</a>
+    <button>Войти</button>
+    <form method="post" th:action="@{/}">
+        <button>На главную</button>
+    </form>
 </body>
 </html>
